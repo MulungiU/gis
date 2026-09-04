@@ -6,25 +6,20 @@
 <meta name="theme-color" content="#001524" />
 <title>아르케 세계대각성 집중세미나 — 2026년 하반기(가을) GIS 신청 안내</title>
 <meta name="description" content="아르케대학교 세계대각성 집중세미나 GIS. 2026년 하반기(가을) 신청 안내. 5개 국가 11개 도시 개설. 신청 2026. 9. 5(토)부터." />
-<!-- ▼▼ 공유 미리보기(카카오톡/페이스북 등) — 배포 후 아래 도메인을 실제 주소로 바꾸세요 ▼▼ -->
 <meta property="og:type" content="website" />
-<meta property="og:locale" content="ko_KR" />
-<meta property="og:locale:alternate" content="en_US" />
+<meta property="og:locale" content="ko_KR" /><meta property="og:locale:alternate" content="en_US" />
 <meta property="og:title" content="아르케 세계대각성 집중세미나 — 2026 하반기 GIS 신청 안내" />
 <meta property="og:description" content="신청 2026. 9. 5(토) ~ 지역별 마감기한 · 5개 국가 11개 도시 개설. GIS 세미나를 수강하기 원하는 모든 분들." />
-<meta property="og:image" content="https://arche-university.github.io/gis/kor/og-image.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://arche-university.github.io/gis/kor/" />
-<meta property="og:site_name" content="Arche University · GIS" />
+<meta property="og:image" content="https://mulungiu.github.io/gis/kor/og-image.png" />
+<meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://mulungiu.github.io/gis/kor/" /><meta property="og:site_name" content="Arche University · GIS" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="아르케 세계대각성 집중세미나 — 2026 하반기 GIS 신청 안내" />
 <meta name="twitter:description" content="신청 2026. 9. 5(토) ~ 지역별 마감기한 · 5개 국가 11개 도시 개설." />
-<meta name="twitter:image" content="https://arche-university.github.io/gis/kor/og-image.png" />
-<link rel="alternate" hreflang="ko" href="https://arche-university.github.io/gis/kor/" />
-<link rel="alternate" hreflang="en" href="https://arche-university.github.io/gis/eng/" />
-<link rel="alternate" hreflang="x-default" href="https://arche-university.github.io/gis/kor/" />
-<!-- ▲▲ 공유 미리보기 끝 ▲▲ -->
+<meta name="twitter:image" content="https://mulungiu.github.io/gis/kor/og-image.png" />
+<link rel="alternate" hreflang="ko" href="https://mulungiu.github.io/gis/kor/" />
+<link rel="alternate" hreflang="en" href="https://mulungiu.github.io/gis/eng/" />
+<link rel="alternate" hreflang="x-default" href="https://mulungiu.github.io/gis/kor/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
@@ -71,6 +66,8 @@
   .nav-links{display:flex; gap:20px; margin-left:auto; flex-wrap:wrap}
   .nav-links a{text-decoration:none; color:var(--muted); font-size:13px; font-weight:600; letter-spacing:.02em; padding:4px 0; transition:color .2s;}
   .nav-links a .en{font-family:var(--serif); font-size:11px; letter-spacing:.18em; color:var(--muted-2); margin-left:5px}
+  html[lang="en"] .nav-links a .en{display:none}
+  html[lang="en"] .summary-en{display:none}
   .nav-links a:hover{color:var(--paper)}
   .lang-switch{display:flex; border:1px solid var(--line); border-radius:3px; overflow:hidden}
   .lang-switch button{background:none; border:none; color:var(--muted); font-family:var(--serif); font-size:12px; letter-spacing:.12em; padding:6px 11px; cursor:pointer; transition:all .2s}
@@ -90,6 +87,8 @@
   .hero-title{font-family:var(--serif); font-weight:600; line-height:.92; font-size:clamp(84px,20vw,190px); letter-spacing:.03em; margin:14px 0 2px;
     background:linear-gradient(180deg,#ffffff, #cde0ea 70%, #9db4c2); -webkit-background-clip:text; background-clip:text; color:transparent;}
   .hero-sub{font-family:var(--serif); font-size:clamp(15px,3.4vw,20px); letter-spacing:.34em; color:var(--paper)}
+  .hero-fullname{margin-top:22px; font-size:clamp(21px,5vw,34px); font-weight:700; letter-spacing:-0.02em; color:var(--paper)}
+  .hero-fullname:empty{display:none; margin:0}
   .hero-kor{margin-top:34px; font-size:clamp(20px,4.6vw,30px); font-weight:700; letter-spacing:-0.02em}
   .hero-period-box{display:inline-block; margin-top:26px; padding:16px 26px; border:1px solid var(--line); border-radius:3px; background:rgba(255,255,255,.02); max-width:640px;}
   .hero-period{font-size:clamp(15px,3.6vw,20px); font-weight:600; color:var(--paper)}
@@ -127,7 +126,7 @@
   table.sched{width:100%; border-collapse:collapse; font-size:13.5px}
   table.sched th,table.sched td{padding:10px 14px; text-align:left; border-top:1px solid rgba(19,64,90,.6); vertical-align:top}
   table.sched th{color:var(--muted-2); font-weight:600; font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; border-top:none}
-  table.sched td:first-child{width:44px}
+  table.sched td:first-child{width:64px}
   .round-pill{display:inline-block; min-width:22px; text-align:center; font-family:var(--serif); font-weight:700; font-size:15px; color:var(--gold)}
   .topic-en{color:var(--muted); font-size:12px}
   .sched-when{font-weight:700; color:var(--paper)}
@@ -224,7 +223,7 @@
   @media (max-width:560px){
     .season-grid{grid-template-columns:1fr}
     .spk-grid{grid-template-columns:1fr}
-    table.sched td:first-child{width:36px}
+    table.sched td:first-child{width:52px}
   }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important; transition:none!important}}
 </style>
@@ -254,10 +253,10 @@
   <div class="hero-season" data-i18n="hero.season">2026 하반기</div>
   <h1 class="hero-title">GIS</h1>
   <div class="hero-sub">GLOBAL INITIATIVES SEMINAR</div>
+  <div class="hero-fullname" data-i18n="hero.fullname">아르케 세계대각성 집중세미나</div>
   <div class="hero-kor" data-i18n="hero.kor">GIS 신청 안내</div>
   <div class="hero-period-box">
-    <div class="hero-period" data-i18n="hero.period">2026. 9. 5 [토] — 지역별 마감기한<small data-i18n="hero.periodSmall">지역별 리더 개별문의</small></div>
-    <div class="hero-period-label" data-i18n="hero.periodLabel">세미나 신청기간</div>
+    <div class="hero-period" data-i18n="hero.period">2026. 9. 5 [토] ~ 지역별 마감기한<small data-i18n="hero.periodSmall">도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small></div>
   </div>
 </div>
 
@@ -298,7 +297,7 @@
     </div>
     <div id="openCourses"></div>
 
-    <details class="curr-all">
+    <details class="curr-all" open>
       <summary>
         <span data-i18n="curr.toggle">전체 커리큘럼 보기</span> <span class="summary-en">Full Curriculum</span>
         <span class="summary-hint" data-i18n="curr.hint">시즌 1–12 · 클릭하여 펼치기</span>
@@ -374,7 +373,7 @@
     </div>
     <div class="apply-card">
       <div class="apply-title" data-i18n="apply.title">2026년 하반기(가을) GIS 신청 안내</div>
-      <div class="apply-window" data-i18n="apply.window">2026. 9. 5 [토] — 지역별 마감기한<small data-i18n="apply.windowSmall">지역별 리더 개별문의</small></div>
+      <div class="apply-window" data-i18n="apply.window">2026. 9. 5 [토] ~ 지역별 마감기한<small data-i18n="apply.windowSmall">도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small></div>
 
       <ul class="apply-list">
         <li>
@@ -388,6 +387,10 @@
         <li>
           <div class="k" data-i18n="apply.k3"></div>
           <div class="v" data-i18n="apply.v3"></div>
+        </li>
+        <li>
+          <div class="k" data-i18n="apply.k4"></div>
+          <div class="v" data-i18n="apply.v4"></div>
         </li>
       </ul>
 
@@ -428,9 +431,9 @@ function imgFail(img){
 const DICT = {
   ko: {
     "nav.greeting":"인사말","nav.curriculum":"커리큘럼","nav.speakers":"강사진","nav.notes":"안내사항","nav.apply":"신청","nav.applyBtn":"세미나 신청",
-    "hero.season":"2026 하반기","hero.kor":"GIS 신청 안내",
-    "hero.period":"2026. 9. 5 [토] — 지역별 마감기한<small>지역별 리더 개별문의</small>","hero.periodSmall":"","hero.periodLabel":"세미나 신청기간",
-    "sec.greeting":"인사말","sec.curriculum":"커리큘럼","sec.speakers":"강사진","sec.notes":"안내사항","sec.apply":"신청",
+    "hero.season":"2026 하반기","hero.kor":"GIS 신청 안내","hero.fullname":"아르케 세계대각성 집중세미나",
+    "hero.period":"2026. 9. 5 [토] ~ 지역별 마감기한<small>도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small>","hero.periodSmall":"","hero.periodLabel":"세미나 신청기간",
+    "sec.greeting":"인사말","sec.curriculum":"커리큘럼","sec.speakers":"강사진","sec.notes":"안내사항","sec.apply":"신청 안내",
     "greet.p1":"GIS(Global Initiatives Seminar)는 주중 또는 주말을 활용하여 역사, 시대, 성경을 집중적으로 조명함으로써 하나님 나라의 역사적·시대적 비전을 품은 사역자를 양성하는 아르케대학교의 공식 세미나입니다.",
     "greet.p2":"아르케대학교(Arche University of Global Mission and Theology)는 세계체제이론, 역사문명학, 선교학 및 신학을 통합적으로 교육하여 국내외 선교 사역을 위한 전문 사역자를 양성할 목적으로 미국 캘리포니아에 설립되었습니다. 본 세미나는 아르케대학교의 공식 학점으로도 인정되는 과정이며, 본교의 모든 교육과정은 추후 본교가 인정하는 공동체의 사역과 연계되어 국내외 현장 사역과 함께 학위를 취득하는 새로운 개념의 신학교육 및 사역자 훈련을 지향합니다.",
     "greet.p3":"시즌 1부터 시즌 12까지 총 12개의 집중세미나는 각 세미나와 이후에 주어지는 추가 과정을 성실히 이수함으로써 목회자 훈련 프로그램인 M.Div. 과정의 약 27%에 해당하는 총 24학점을 취득하도록 구성되어 있습니다. 또한 본 집중세미나는 이후 본 기관이 인정하는 사역팀과 연계된 심화교육과 현장훈련으로 이어져, 전문적인 사역자로서의 훈련을 시작할 수 있는 입문과정에 해당하는 내용들입니다.",
@@ -440,9 +443,9 @@ const DICT = {
     "open.countries":"개 국가","open.cities":"개 도시",
     "open.lead":"2026년 하반기, 5개 국가 11개 도시에서 GIS 집중세미나가 개설되었습니다.<br>원하시는 도시·시즌을 확인하고 신청해 주세요.",
     "open.note":"각 도시 · 라운드(A/B)별로 개설된 시즌과 일정입니다. 일정 조율 등 세부사항은 지역별 리더에게 개별 문의해 주세요.",
-    "curr.toggle":"전체 커리큘럼 보기","curr.hint":"시즌 1–12 · 클릭하여 펼치기",
+    "curr.toggle":"전체 커리큘럼","curr.hint":"시즌 1–12",
     "curr.intro":"GIS는 12개 주제의 시즌별 세미나로 구성되어 있습니다. 아래 각 시즌을 클릭하시면 세부 강의 목록을 확인하실 수 있습니다.",
-    "sched.R":"R","sched.topic":"시즌 · 주제","sched.date":"일정","sched.time":"시간","sched.none":"—","sched.tbd":"일정 조율 중",
+    "sched.R":"라운드","sched.topic":"시즌 · 주제","sched.date":"일정","sched.time":"시간","sched.none":"—","sched.tbd":"일정 조율 중",
     "notes.intro":"각 시즌별 세미나 수강 시의 공식학점 인정 절차와 수강료 및 장학금은 아래와 같습니다.",
     "notes.n1h":"세미나 수강 후 아르케대학교 학점취득",
     "notes.n1p":"세미나 참석자 전원에게는 아르케대학교의 학생ID가 자동으로 발급되며, 세미나를 마친 뒤 추가과제까지 완료하면 최종 학점이 부여됩니다. 추가과제는 해당 시즌의 주제와 관련된 전문 서적 통독, 온라인 과제, 팀원과의 심층 토의, 해당 분야 교수와의 온라인 팔로우업 미팅으로 구성됩니다. 각 시즌은 2학점 취득을 목표로 하며, 학점 취득은 세미나를 수강한 다음 학기까지 완료되어야 합니다.",
@@ -454,17 +457,17 @@ const DICT = {
     "notes.thType":"장학금 종류","notes.thApplies":"적용","notes.thElig":"대상","notes.thAmt":"장학금액",
     "notes.n3foot":"결제 전 반드시 담당자를 통해 인정 여부를 확인하고 코드를 수령해서 입력해야 적용되며, 결제 이후에는 변경이 불가능합니다. 저소득국가장학금을 제외한 중복 수혜 시에는 최대 50%까지만 적용됩니다.",
     "apply.title":"2026년 하반기(가을) GIS 신청 안내",
-    "apply.window":"2026. 9. 5 [토] — 지역별 마감기한<small>지역별 리더 개별문의</small>","apply.windowSmall":"",
+    "apply.window":"2026. 9. 5 [토] ~ 지역별 마감기한<small>도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small>","apply.windowSmall":"",
     "apply.k1":"신청 대상","apply.v1":"GIS 세미나를 수강하기 원하는 모든 분들",
-    "apply.k2":"신청 기간","apply.v2":"2026. 9. 5(토) ~ 지역별 마감기한<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ 마감기한은 지역별 · 시즌별로 상이하므로 각 지역리더에게 별도 문의해 주세요. (연락 방법은 온라인 신청폼을 통해 확인 가능합니다.)</p>",
-    "apply.k3":"신청 방법","apply.v3":"아래 온라인 폼을 작성해 주십시오.",
+    "apply.k2":"신청 기간","apply.v2":"2026. 9. 5(토) ~ 지역별 마감기한<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ 마감기한은 도시별 담당자에게 개별 문의해 주세요 (일반적으로 각 도시의 첫 세미나 시작 전까지).</p>",
+    "apply.k3":"신청 방법","apply.v3":"아래 온라인 폼을 작성해 주십시오. 접수 후 담당자가 Arche ID와 장학금 코드를 안내해 드리며, 안내받은 코드로 최소 USD 20 이상을 결제하시면 등록이 최종 완료됩니다.","apply.k4":"도시별 문의","apply.v4":"한국 | 일산 · <a href=\"tel:+82319082875\">031-908-2875</a><br>캐나다 | 밴쿠버 · <a href=\"tel:+16048095647\">+1 604 809-5647</a><p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ 도시 연락처 순차 추가 예정</p>",
     "apply.cta":"온라인 신청 폼 열기"
   },
   en: {
     "nav.greeting":"Greeting","nav.curriculum":"Curriculum","nav.speakers":"Speakers","nav.notes":"Notes","nav.apply":"Apply","nav.applyBtn":"Apply Now",
-    "hero.season":"2026 Fall","hero.kor":"GIS Application",
-    "hero.period":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact your regional leader</small>","hero.periodSmall":"","hero.periodLabel":"Application Period",
-    "sec.greeting":"Greeting","sec.curriculum":"Curriculum","sec.speakers":"Speakers","sec.notes":"Notes","sec.apply":"Apply",
+    "hero.season":"2026 Fall","hero.kor":"GIS Application","hero.fullname":"",
+    "hero.period":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact each city's coordinator<br>(generally before the first seminar begins)</small>","hero.periodSmall":"","hero.periodLabel":"Application Period",
+    "sec.greeting":"Greeting","sec.curriculum":"Curriculum","sec.speakers":"Speakers","sec.notes":"Notes","sec.apply":"Application",
     "greet.p1":"The Global Initiatives Seminar (GIS) is an official seminar of Arche University that trains ministers with a historical, epochal vision for the Kingdom of God—using weekdays or weekends to intensively examine history, the times, and the Bible.",
     "greet.p2":"Arche University of Global Mission and Theology was founded in California, USA, to train professional ministers for mission work at home and abroad through an integrated education in world-systems theory, the study of history and civilization, missiology, and theology. This seminar is recognized for official academic credit at Arche University. All of the university's programs are designed to connect with the ministry of communities recognized by the university, pursuing a new model of theological education and minister training in which students earn their degree alongside field ministry at home and abroad.",
     "greet.p3":"The twelve intensive seminars—Season 1 through Season 12—are structured so that, by faithfully completing each seminar and its follow-up assignments, participants earn a total of 24 credits, roughly 27% of the M.Div. pastoral-training program. These seminars then lead into advanced study and field training connected with ministry teams recognized by the institution, serving as an introductory course from which one can begin training as a professional minister.",
@@ -474,9 +477,9 @@ const DICT = {
     "open.countries":" Countries","open.cities":" Cities",
     "open.lead":"For the second half of 2026, GIS intensive seminars have opened in 11 cities across 5 countries.<br>Find the city and season you want, then apply.",
     "open.note":"Seasons and schedules opened by city and round (A / B). For details such as scheduling, please contact your regional leader.",
-    "curr.toggle":"View Full Curriculum","curr.hint":"Seasons 1–12 · click to expand",
+    "curr.toggle":"Full Curriculum","curr.hint":"Seasons 1–12",
     "curr.intro":"GIS consists of twelve themed seasons. Click each season below to view its detailed lecture list.",
-    "sched.R":"R","sched.topic":"Season · Topic","sched.date":"Date","sched.time":"Time","sched.none":"—","sched.tbd":"Pending scheduling",
+    "sched.R":"Round","sched.topic":"Season · Topic","sched.date":"Date","sched.time":"Time","sched.none":"—","sched.tbd":"Pending scheduling",
     "notes.intro":"The official credit-recognition process, tuition, and scholarships for each season's seminar are as follows.",
     "notes.n1h":"Earning Arche University Credit After the Seminar",
     "notes.n1p":"Every seminar participant is automatically issued an Arche University student ID, and final credit is granted once the seminar and its follow-up assignments are complete. The assignments consist of reading a specialized book on the season's theme, online coursework, in-depth discussion with team members, and an online follow-up meeting with a professor in the field. Each season targets 2 credits, which must be completed by the semester following the seminar.",
@@ -488,10 +491,10 @@ const DICT = {
     "notes.thType":"Type","notes.thApplies":"Applies","notes.thElig":"Eligibility","notes.thAmt":"Amount",
     "notes.n3foot":"Before payment, you must confirm eligibility with the coordinator and receive and enter the code; no changes are possible after payment. Except for the Low-Income Country Scholarship, combined awards are capped at 50%.",
     "apply.title":"2026 Fall GIS Application",
-    "apply.window":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact your regional leader</small>","apply.windowSmall":"",
+    "apply.window":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact each city's coordinator<br>(generally before the first seminar begins)</small>","apply.windowSmall":"",
     "apply.k1":"Eligibility","apply.v1":"Anyone who wishes to take a GIS seminar",
-    "apply.k2":"Application Period","apply.v2":"From Sep 5, 2026 (Sat) until each region's deadline<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">\u203B Deadlines vary by region and season, so please inquire separately with each regional leader. (Contact details are available through the online application form.)</p>",
-    "apply.k3":"How to Apply","apply.v3":"Please complete the online form below.",
+    "apply.k2":"Application Period","apply.v2":"From Sep 5, 2026 (Sat) until each region's deadline<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">\u203B Deadlines vary by city — please check with each city's coordinator (generally until that city's first seminar begins).</p>",
+    "apply.k3":"How to Apply","apply.v3":"Please complete the online form below. After your application is received, the coordinator will provide your Arche ID and scholarship code; registration is finalized once you pay at least USD 20 using the code provided.","apply.k4":"Contact by City","apply.v4":"Korea | Ilsan · <a href=\"tel:+82319082875\">031-908-2875</a><br>Canada | Vancouver · <a href=\"tel:+16048095647\">+1 604 809-5647</a><p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ City contacts will be added progressively.</p>",
     "apply.cta":"Open Application Form"
   }
 };
@@ -673,8 +676,8 @@ function renderCurriculum(){
 const SPEAKERS = [
   { name:"Dr. Paul Park", img:"57cb1fd232.jpg",
     role:{ko:"아르케대학교 총장 · WYC 국제대표", en:"President, Arche University · WYC International Director"},
-    cred:{ko:["의사(서울대) · 국제정치학박사(서울대) · 신학박사과정(Fuller)","중동아랍선교사 · IVF 활동 · 미남침례목사","청년대각성운동 및 이슬람선교 전문가"],
-          en:["M.D. (Seoul National Univ.) · Ph.D. in International Politics (Seoul National Univ.) · Th.D. candidate (Fuller)","Missionary to the Arab Middle East · IVF · Southern Baptist (USA) minister","Specialist in the youth awakening movement and Islamic missions"]} },
+    cred:{ko:["의사(서울대) · 국제정치학박사(서울대) · 신학박사과정(Fuller)","뉴욕주립대(송도) 철학 겸임교수","중동아랍선교사 · IVF 활동 · 미남침례목사","청년대각성운동 및 이슬람선교 전문가"],
+          en:["M.D. (Seoul National Univ.) · Ph.D. in International Politics (Seoul National Univ.) · Th.D. candidate (Fuller)","State University of New York (Songdo), Adjunct Professor of Philosophy","Missionary to the Arab Middle East · IVF · Southern Baptist (USA) minister","Specialist in the youth awakening movement and Islamic missions"]} },
   { name:"M. Nathanael Choi", img:"9a8fc45250.jpg",
     role:{ko:"WYC Korea 대표", en:"Director, WYC Korea"},
     cred:{ko:["중동아시아선교사 · CCC 활동","Y.Church 디렉터 · 백석장로회목사","현장교회운동 전문가"],
@@ -689,8 +692,8 @@ const SPEAKERS = [
           en:["M.D. (Seoul National Univ.) · M.S. candidate in Global Health (Johns Hopkins) · M.Div. candidate (Gateway)","Missionary to the Arab Middle East · Korea CMF (Christian Medical Fellowship)","Co-author of Story-Dialogue"]} },
   { name:"M. Daniel Evans", img:"01bef2d68c.jpg",
     role:{ko:"WYC 캐나다 사역자", en:"Minister, WYC Canada"},
-    cred:{ko:["신문방송학사(한양대) · 목회학석사(미드웨스턴)","중동아랍선교사","New Song Community Church 사역자 · 캐나다침례회(CNBC)목사"],
-          en:["B.A. in Journalism & Broadcasting (Hanyang Univ.) · M.Div. (Midwestern)","Missionary to the Arab Middle East","Minister at New Song Community Church · Canadian (CNBC) Baptist minister"]},
+    cred:{ko:["신문방송학사(한양대) · 목회학석사(미드웨스턴)","중동아랍선교사 · IMB 중동·북아프리카","New Song Community Church 사역자 · 캐나다침례회(CNBC)목사"],
+          en:["B.A. in Journalism & Broadcasting (Hanyang Univ.) · M.Div. (Midwestern)","Missionary to the Arab Middle East · IMB Middle East & North Africa","Minister at New Song Community Church · Canadian (CNBC) Baptist minister"]},
     note:{ko:"보안상 사진을 공개하지 않습니다", en:"For security reasons, no photo is shown"} },
   { name:"Rev. Anna Lee", img:"2a26e0784f.jpg",
     role:{ko:"WYC 캐나다 사역자", en:"Minister, WYC Canada"},
