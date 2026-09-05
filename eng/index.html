@@ -121,7 +121,9 @@
   .country-name::after{content:""; flex:1; height:1px; background:var(--line)}
   .city-card{border:1px solid var(--line); border-radius:4px; background:var(--panel); margin-bottom:10px; overflow:hidden}
   .city-head{padding:12px 18px; font-weight:800; font-size:15px; border-bottom:1px solid var(--line); background:rgba(255,255,255,.02)}
-  .city-venue{font-weight:500; font-size:12.5px; color:var(--muted); margin-top:4px; line-height:1.5}
+  .city-venue{font-weight:500; font-size:12.5px; color:var(--muted); margin-top:4px; line-height:1.6}
+  .city-venue a{color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(200,162,75,.35)}
+  .city-venue a:hover{border-bottom-color:var(--gold)}
   .city-head .en{color:var(--muted); font-weight:600; font-size:13px; margin-left:6px}
   table.sched{width:100%; border-collapse:collapse; font-size:13.5px}
   table.sched th,table.sched td{padding:10px 14px; text-align:left; border-top:1px solid rgba(19,64,90,.6); vertical-align:top}
@@ -193,6 +195,9 @@
   .apply-list li{display:grid; grid-template-columns:150px 1fr; gap:16px; padding-bottom:16px; border-bottom:1px solid var(--line)}
   .apply-list .k{font-weight:800; color:var(--paper); font-size:14px}
   .apply-list .v{color:#cfdde6; font-size:14px}
+  .apply-list .v .cc{margin:4px 0}
+  .apply-list .v a{color:var(--gold); text-decoration:none; border-bottom:1px solid rgba(200,162,75,.35)}
+  .apply-list .v a:hover{border-bottom-color:var(--gold)}
   .apply-cta{margin-top:30px; text-align:center}
   .apply-cta a{display:inline-block; background:var(--orange); color:#1a1006; text-decoration:none; font-weight:800; font-size:16px; padding:15px 40px; border-radius:3px; letter-spacing:.01em; transition:filter .2s;}
   .apply-cta a:hover{filter:brightness(1.08)}
@@ -460,7 +465,7 @@ const DICT = {
     "apply.window":"2026. 9. 5 [토] ~ 지역별 마감기한<small>도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small>","apply.windowSmall":"",
     "apply.k1":"신청 대상","apply.v1":"GIS 세미나를 수강하기 원하는 모든 분들",
     "apply.k2":"신청 기간","apply.v2":"2026. 9. 5(토) ~ 지역별 마감기한<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ 마감기한은 도시별 담당자에게 개별 문의해 주세요 (일반적으로 각 도시의 첫 세미나 시작 전까지).</p>",
-    "apply.k3":"신청 방법","apply.v3":"아래 온라인 폼을 작성해 주십시오. 접수 후 담당자가 Arche ID와 장학금 코드를 안내해 드리며, 안내받은 코드로 최소 USD 20 이상을 결제하시면 등록이 최종 완료됩니다.","apply.k4":"도시별 문의","apply.v4":"한국 | 일산 · <a href=\"tel:+82319082875\">+82 31-908-2875</a><br>캐나다 | 밴쿠버 · <a href=\"tel:+16048095647\">+1 604-809-5647</a><p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ 도시 연락처 순차 추가 예정</p>",
+    "apply.k3":"신청 방법","apply.v3":"아래 온라인 신청폼을 작성해 주십시오. 접수 후 담당자가 Arche ID와 장학금 코드를 안내해 드리며, 안내받은 코드로 결제하시면 등록이 최종 완료됩니다.","apply.k4":"도시별 문의 (전화번호 / 텔레그램ID)","apply.v4":"<div class=\"cc\"><b>한국 | 서울대 캠퍼스</b> — <a href=\"https://t.me/FINAL_TASK\" target=\"_blank\" rel=\"noopener\">@FINAL_TASK</a></div><div class=\"cc\"><b>한국 | 일산</b> — <a href=\"tel:+82319082875\" target=\"_blank\" rel=\"noopener\">+82 31-908-2875</a></div><div class=\"cc\"><b>캐나다 | 밴쿠버</b> — <a href=\"tel:+16048095647\" target=\"_blank\" rel=\"noopener\">+1 604-809-5647</a> · <a href=\"https://t.me/KihoonVan\" target=\"_blank\" rel=\"noopener\">@KihoonVan</a></div><div class=\"cc\"><b>캐나다 | 토론토</b> — <a href=\"https://t.me/annalijy\" target=\"_blank\" rel=\"noopener\">@annalijy</a></div><div class=\"cc\"><b>미국 | 샌프란시스코</b> — <a href=\"https://t.me/BBow1834\" target=\"_blank\" rel=\"noopener\">@BBow1834</a></div><div class=\"cc\"><b>미국 | 로스앤젤레스</b> — <a href=\"https://t.me/Hwchoi444\" target=\"_blank\" rel=\"noopener\">@Hwchoi444</a></div><div class=\"cc\"><b>미국 | 시애틀</b> — <a href=\"https://t.me/Francoan1\" target=\"_blank\" rel=\"noopener\">@Francoan1</a></div><div class=\"cc\"><b>푸에르토리코 | 산후안</b> — <a href=\"https://t.me/Margieca01\" target=\"_blank\" rel=\"noopener\">@Margieca01</a></div><div class=\"cc\"><b>파키스탄 | 이슬라마바드</b> — <span style=\"color:var(--muted-2)\">연락처 추후 안내</span></div><div class=\"cc\"><b>파키스탄 | 사히왈</b> — <a href=\"https://t.me/Sahar53787\" target=\"_blank\" rel=\"noopener\">@Sahar53787</a></div>",
     "apply.cta":"온라인 신청 폼 열기"
   },
   en: {
@@ -494,7 +499,7 @@ const DICT = {
     "apply.window":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact each city's coordinator<br>(generally before the first seminar begins)</small>","apply.windowSmall":"",
     "apply.k1":"Eligibility","apply.v1":"Anyone who wishes to take a GIS seminar",
     "apply.k2":"Application Period","apply.v2":"From Sep 5, 2026 (Sat) until each region's deadline<p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">\u203B Deadlines vary by city — please check with each city's coordinator (generally until that city's first seminar begins).</p>",
-    "apply.k3":"How to Apply","apply.v3":"Please complete the online form below. After your application is received, the coordinator will provide your Arche ID and scholarship code; registration is finalized once you pay at least USD 20 using the code provided.","apply.k4":"Contact by City","apply.v4":"Korea | Ilsan · <a href=\"tel:+82319082875\">+82 31-908-2875</a><br>Canada | Vancouver · <a href=\"tel:+16048095647\">+1 604-809-5647</a><p style=\"margin:8px 0 0;color:var(--muted);font-size:13px\">※ City contacts will be added progressively.</p>",
+    "apply.k3":"How to Apply","apply.v3":"Please complete the online application form below. After your application is received, the coordinator will provide your Arche ID and scholarship code; registration is finalized once you pay using the code provided.","apply.k4":"Contact by City (Phone / Telegram ID)","apply.v4":"<div class=\"cc\"><b>Korea | SNU Campus</b> — <a href=\"https://t.me/FINAL_TASK\" target=\"_blank\" rel=\"noopener\">@FINAL_TASK</a></div><div class=\"cc\"><b>Korea | Ilsan</b> — <a href=\"tel:+82319082875\" target=\"_blank\" rel=\"noopener\">+82 31-908-2875</a></div><div class=\"cc\"><b>Canada | Vancouver</b> — <a href=\"tel:+16048095647\" target=\"_blank\" rel=\"noopener\">+1 604-809-5647</a> · <a href=\"https://t.me/KihoonVan\" target=\"_blank\" rel=\"noopener\">@KihoonVan</a></div><div class=\"cc\"><b>Canada | Toronto</b> — <a href=\"https://t.me/annalijy\" target=\"_blank\" rel=\"noopener\">@annalijy</a></div><div class=\"cc\"><b>USA | San Francisco</b> — <a href=\"https://t.me/BBow1834\" target=\"_blank\" rel=\"noopener\">@BBow1834</a></div><div class=\"cc\"><b>USA | LA</b> — <a href=\"https://t.me/Hwchoi444\" target=\"_blank\" rel=\"noopener\">@Hwchoi444</a></div><div class=\"cc\"><b>USA | Seattle</b> — <a href=\"https://t.me/Francoan1\" target=\"_blank\" rel=\"noopener\">@Francoan1</a></div><div class=\"cc\"><b>Puerto Rico | San Juan</b> — <a href=\"https://t.me/Margieca01\" target=\"_blank\" rel=\"noopener\">@Margieca01</a></div><div class=\"cc\"><b>Pakistan | Islamabad</b> — <span style=\"color:var(--muted-2)\">Contact TBA</span></div><div class=\"cc\"><b>Pakistan | Sahiwal</b> — <a href=\"https://t.me/Sahar53787\" target=\"_blank\" rel=\"noopener\">@Sahar53787</a></div>",
     "apply.cta":"Open Application Form"
   }
 };
@@ -510,17 +515,17 @@ const OPEN = [
       { r:"A", s:"Season 2", en:"Kingdoms and the Kingdom", kt:"제국과 천국", when:"2026. 10. 31(토), 11. 1(일)", time:"(토) AM 9:00–PM 19:00, (일) PM 18:00–PM 22:00" },
       { r:"B", s:"Season 3", en:"The Ministry of the Christ", kt:"그리스도의 사역", when:"2026. 11. 28(토), 11. 29(일)", time:"(토) AM 9:00–PM 19:00, (일) PM 18:00–PM 22:00" },
     ]},
-    { city:"Ilsan", ko:"일산", venue:{ko:"(토) 물댄동산교회 · (일) 일산 기쁜하루치과",en:"(Sat) Muldaendongsan Church · (Sun) Ilsan Gippeunharu Dental Clinic"}, rows:[
+    { city:"Ilsan", ko:"일산", venue:{ko:"(토) <a href=\"https://www.google.com/maps/search/%EB%AC%BC%EB%8C%84%EB%8F%99%EC%82%B0%EA%B5%90%ED%9A%8C%20%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EC%82%AC%EB%8B%B9%EB%A1%9C%20215\" target=\"_blank\" rel=\"noopener\">물댄동산교회 · 서울 동작구 사당로 215 서림빌딩 5층</a><br>(일) <a href=\"https://www.google.com/maps/search/%EA%B8%B0%EC%81%9C%ED%95%98%EB%A3%A8%EC%B9%98%EA%B3%BC%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%201059\" target=\"_blank\" rel=\"noopener\">기쁜하루치과 · 경기 고양시 일산동구 중앙로 1059 2층</a>",en:"(Sat) <a href=\"https://www.google.com/maps/search/%EB%AC%BC%EB%8C%84%EB%8F%99%EC%82%B0%EA%B5%90%ED%9A%8C%20%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EC%82%AC%EB%8B%B9%EB%A1%9C%20215\" target=\"_blank\" rel=\"noopener\">Muldaendongsan Church · 215 Sadang-ro, Dongjak-gu, Seoul (Seorim Bldg 5F)</a><br>(Sun) <a href=\"https://www.google.com/maps/search/%EA%B8%B0%EC%81%9C%ED%95%98%EB%A3%A8%EC%B9%98%EA%B3%BC%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EC%A4%91%EC%95%99%EB%A1%9C%201059\" target=\"_blank\" rel=\"noopener\">Ilsan Gippeunharu Dental Clinic · 1059 Jungang-ro, Ilsandong-gu, Goyang (2F)</a>"}, rows:[
       { r:"A", s:"Season 1", en:"Global Awakening", kt:"세계대각성", when:"2026. 10. 17(토), 10. 18(일)", time:"(토) AM 9:00–PM 19:00, (일) PM 18:00–PM 22:00" },
       { r:"B", s:"Season 5", en:"Economy", kt:"경제", when:"2026. 11. 7(토), 11. 8(일)", time:"(토) AM 9:00–PM 19:00, (일) PM 18:00–PM 22:00" },
     ]},
   ]},
   { country:"CANADA", cities:[
-    { city:"Vancouver", ko:"밴쿠버", venue:{ko:"밴쿠버 호산나한인교회",en:"Vancouver Hosanna Korean Church"}, rows:[
+    { city:"Vancouver", ko:"밴쿠버", venue:{ko:"<a href=\"https://www.google.com/maps/search/2665%20Runnel%20Drive%20Coquitlam%20BC%20V3E%201S3\" target=\"_blank\" rel=\"noopener\">밴쿠버 호산나한인교회 · 2665 Runnel Drive, Coquitlam, BC V3E 1S3</a>",en:"<a href=\"https://www.google.com/maps/search/2665%20Runnel%20Drive%20Coquitlam%20BC%20V3E%201S3\" target=\"_blank\" rel=\"noopener\">Vancouver Hosanna Korean Church · 2665 Runnel Drive, Coquitlam, BC V3E 1S3</a>"}, rows:[
       { r:"A", s:"Season 1", en:"Global Awakening", kt:"세계대각성", when:"2026. 9. 25(금), 9. 26(토)", time:"(금) PM 18:00–PM 22:00, (토) AM 9:00–PM 19:00" },
       { r:"B", s:"Season 2", en:"Kingdoms and the Kingdom", kt:"제국과 천국", when:"2026. 11. 12(목), 11. 14(토)", time:"(목) PM 18:00–PM 22:00, (토) AM 9:00–PM 19:00" },
     ]},
-    { city:"Toronto", ko:"토론토", venue:{ko:"모닝듀교회",en:"Morning Dew Church"}, rows:[
+    { city:"Toronto", ko:"토론토", venue:{ko:"<a href=\"https://www.google.com/maps/search/7003%20Steeles%20Ave%20W%20Etobicoke%20ON%20M9W%200A2\" target=\"_blank\" rel=\"noopener\">모닝듀교회 · 7003 Steeles Ave W Unit #8, Etobicoke, ON M9W 0A2 (2층)</a>",en:"<a href=\"https://www.google.com/maps/search/7003%20Steeles%20Ave%20W%20Etobicoke%20ON%20M9W%200A2\" target=\"_blank\" rel=\"noopener\">Morning Dew Church · Unit #8, 7003 Steeles Ave W, Etobicoke, ON M9W 0A2 (2F)</a>"}, rows:[
       { r:"A", s:"Season 1", en:"Global Awakening", kt:"세계대각성", when:"2026. 10. 1(목), 10. 3(토)", time:"(목) PM 18:00–PM 22:00, (토) AM 9:00–PM 19:00" },
       { r:"B", s:"Season 2", en:"Kingdoms and the Kingdom", kt:"제국과 천국", when:"2027. 1. 7(목), 1. 9(토)", time:"(목) PM 18:00–PM 22:00, (토) AM 9:00–PM 19:00" },
     ]},
@@ -545,7 +550,7 @@ const OPEN = [
     ]},
   ]},
   { country:"PAKISTAN", cities:[
-    { city:"Islamabad", ko:"이슬라마바드", venue:{ko:"Jesus Calls Church",en:"Jesus Calls Church"}, rows:[
+    { city:"Islamabad", ko:"이슬라마바드", venue:{ko:"<a href=\"https://www.google.com/maps/search/Jesus%20Calls%20Church%20Khokhar%20Market%20Stadium%20Road%20Rawalpindi\" target=\"_blank\" rel=\"noopener\">Jesus Calls Church · Khokhar Market, Stadium Road, Rawalpindi</a>",en:"<a href=\"https://www.google.com/maps/search/Jesus%20Calls%20Church%20Khokhar%20Market%20Stadium%20Road%20Rawalpindi\" target=\"_blank\" rel=\"noopener\">Jesus Calls Church · Khokhar Market, Stadium Road, Rawalpindi</a>"}, rows:[
       { r:"A", s:"Season 1", en:"Global Awakening", kt:"세계대각성", when:"2026. 10. 9(금), 10. 10(토)", time:"(금) PM 17:00~PM 21:00, (토) AM 9:00~PM 17:00" },
       { r:"B", s:"Season 2", en:"Kingdoms and the Kingdom", kt:"제국과 천국", when:"2026. 12. 4(금), 12. 5(토)", time:"(금) PM 17:00~PM 21:00, (토) AM 9:00~PM 17:00" },
     ]},
@@ -563,7 +568,7 @@ function renderOpen(){
       <div class="country-name">${esc(c.country)}</div>
       ${c.cities.map(city => `
         <div class="city-card">
-          <div class="city-head">${esc(city.city)}${L==="ko" ? `<span class="en">${esc(city.ko)}</span>` : ""}${city.venue ? `<div class="city-venue">${esc(city.venue[L])}</div>` : ""}</div>
+          <div class="city-head">${esc(city.city)}${L==="ko" ? `<span class="en">${esc(city.ko)}</span>` : ""}${city.venue ? `<div class="city-venue">${city.venue[L]}</div>` : ""}</div>
           <table class="sched">
             <thead><tr><th>${D["sched.R"]}</th><th>${D["sched.topic"]}</th><th>${D["sched.date"]}</th><th>${D["sched.time"]}</th></tr></thead>
             <tbody>
