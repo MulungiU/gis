@@ -460,7 +460,7 @@ const DICT = {
     "notes.n3h":"장학금",
     "notes.n3p":"아르케대학교 설립기념 장학금이 운영됩니다. 담당자에게 문의 후 학생분께서 해당 코드를 입력하면, 결제 시 자동으로 아래 표의 장학금액만큼 혜택이 적용됩니다. 2026년 하반기 등록학생 전원에게는 「Founding 학생장학금」이 지급됩니다.",
     "notes.thType":"장학금 종류","notes.thApplies":"적용","notes.thElig":"대상","notes.thAmt":"장학금액",
-    "notes.n3foot":"결제 전 반드시 담당자를 통해 인정 여부를 확인하고 코드를 수령해서 입력해야 적용되며, 결제 이후에는 변경이 불가능합니다. 저소득국가장학금을 제외한 중복 수혜 시에는 최대 50%까지만 적용됩니다.",
+    "notes.n3foot":"결제 전 반드시 담당자를 통해 인정 여부를 확인하고 코드를 수령해서 입력해야 적용되며, 결제 이후에는 변경이 불가능합니다. 저소득국가장학금·가족장학금을 제외한 중복 수혜 시에는 최대 50%까지만 적용됩니다. 가족장학금은 주(主)학생과 같은 시즌에 등록하는 가족에게 해당 시즌에만 적용되며(계속 적용되지 않음), 여러 시즌을 동시 결제하는 경우 주학생도 해당 시즌들을 모두 결제해야 합니다. 주학생 본인에게는 적용되지 않습니다.",
     "apply.title":"2026년 하반기(가을) GIS 신청 안내",
     "apply.window":"2026. 9. 5 [토] ~ 지역별 마감기한<small>도시별 담당자 개별연락<br>(일반적으로 첫 세미나 시작 전까지)</small>","apply.windowSmall":"",
     "apply.k1":"신청 대상","apply.v1":"GIS 세미나를 수강하기 원하는 모든 분들",
@@ -494,7 +494,7 @@ const DICT = {
     "notes.n3h":"Scholarships",
     "notes.n3p":"Arche University offers founding-commemoration scholarships. After inquiring with the coordinator and entering the provided code, the scholarship amount shown below is applied automatically at payment. All students enrolled in the second half of 2026 receive the \u0022Founding Student Scholarship.\u0022",
     "notes.thType":"Type","notes.thApplies":"Applies","notes.thElig":"Eligibility","notes.thAmt":"Amount",
-    "notes.n3foot":"Before payment, you must confirm eligibility with the coordinator and receive and enter the code; no changes are possible after payment. Except for the Low-Income Country Scholarship, combined awards are capped at 50%.",
+    "notes.n3foot":"Before payment, you must confirm eligibility with the coordinator and receive and enter the code; no changes are possible after payment. Except for the Low-Income Country Scholarship and the Family Scholarship, combined awards are capped at 50%. The Family Scholarship applies only to family members who enroll in the same season as the main student, for that season only (not ongoing); when paying for multiple seasons at once, the main student must also pay for those seasons. It does not apply to the main student themselves.",
     "apply.title":"2026 Fall GIS Application",
     "apply.window":"Sep 5, 2026 (Sat) — Regional Deadlines<small>Contact each city's coordinator<br>(generally before the first seminar begins)</small>","apply.windowSmall":"",
     "apply.k1":"Eligibility","apply.v1":"Anyone who wishes to take a GIS seminar",
@@ -731,6 +731,8 @@ const SCH = [
   { type:{ko:"선교사장학금",en:"Missionary Scholarship"}, applies:{ko:"항상 적용",en:"Always"}, elig:{ko:"본교에서 인정하는 기관의 공식 파송선교사 (인정기관 문의 필요)",en:"Official missionaries sent by an institution recognized by the university (inquiry required)"}, amt:{ko:"수강료의 50%",en:"50% of tuition"} },
   { type:{ko:"글로벌 킹덤 임팩트 스쿨 장학금",en:"Global Kingdom Impact School Scholarship"}, applies:{ko:"시즌 2개까지 적용",en:"Up to 2 seasons"}, elig:{ko:"WYC의 글로벌 킹덤 임팩트 스쿨 혹은 이에 준하는 선교훈련을 졸업한 자",en:"Graduates of WYC's Global Kingdom Impact School or equivalent mission training"}, amt:{ko:"수강료의 10%",en:"10% of tuition"} },
   { type:{ko:"저소득국가장학금",en:"Low-Income Country Scholarship"}, applies:{ko:"항상 적용 · 중복불가",en:"Always · not combinable"}, elig:{ko:"국가 GDP가 일정금액 이하인 국가의 거주자 (국가별 상이)",en:"Residents of countries with GDP below a set threshold (varies by country)"}, amt:{ko:"수강료의 50–95%",en:"50–95% of tuition"} },
+  { type:{ko:"가족장학금",en:"Family Scholarship"}, applies:{ko:"해당 시즌만 적용 · 50% 장학금에 추가 적용 가능",en:"That season only · stacks on top of a 50% scholarship"}, elig:{ko:"같은 학기 주(主)학생의 배우자·부모·자녀·친형제 (그 외 친척 불가). 신청 시 주학생 이름/학번 명시 필수.",en:"Spouse, parent, child, or sibling of a main student in the same semester (other relatives not eligible). State the main student\u2019s name/ID when applying."}, amt:{ko:"수강료의 20%",en:"20% of tuition"} },
+  { type:{ko:"호스트장학금",en:"Host Scholarship"}, applies:{ko:"항상 적용",en:"Always"}, elig:{ko:"호스트 장소의 소유자 또는 대표자 1인 (호스트 주체자)",en:"The owner or representative of the host venue — one person only"}, amt:{ko:"수강료의 100%",en:"100% of tuition"} },
 ];
 function renderScholarships(){
   const L = state.lang;
